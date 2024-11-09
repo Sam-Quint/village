@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+        }
+        main{
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+        }
+        section{
+            position: relative;
+            width:80vw;
+            height:20vh;
+            background-color: lightgray;
+            border: 2px solid black;
+            margin:20px 0px;
+        }
+        .content{
+            position: absolute;
+            height: 80%;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+        h2{
+            background-color: blue;
+            color:white;
+            width: 100%;
+            height: 20%;
+        }
+        p{
+            width: 100%;
+        }
+        a{
+            color:red;
+        }
+        .pancarte{
+            position: fixed;
+            height:100vh;
+            width:100vw;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 90000;
+        }
+        .pancarteV2{
+            position: fixed;
+            height:100vh;
+            width:100vw;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 90000;
+        }
+        form{
+            width:50vw;
+            height:50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: white;
+            border:5px solid black;
+        }
+        .cancel{
+            margin: 15px;
+            height:60px;
+            width:60px;
+        }
+    </style>
+    <nom>Document</nom>
+</head>
+<body>
+    <header>
+        <h1>Liste des posts</h1>
+        <button class="new"> Créer un nouveau post</button>
+        <div class="compta">
+
+        </div>
+        <div class="pancarte">
+            <form method="POST" id="myForm">
+                <label for="nom">Titre :</label>
+                <input name="nom" id="nom" type="text" required>
+                
+                <label for="metier">Contenu :</label>
+                <input name="metier" id="metier" type="text" required>
+                
+                <label for="age">ID utilisateur :</label>
+                <input name="age" id="age" type="number" required>
+                
+                <button type="submit">Valider</button>
+            </form>
+            <button class="cancel"> X </button>
+        </div>
+        <div class="pancarteV2">
+            <form method="POST" id="myForm">
+                <label for="nomv2">Titre :</label>
+                <input name="nomV2" id="nomV2" type="text" required>
+                
+                <label for="metierV2">Contenu :</label>
+                <input name="metierV2" id="metierV2" type="text" required>
+                
+                <label for="ageV2">ID utilisateur :</label>
+                <input name="ageV2" id="ageV2" type="number" required>
+                
+                <button type="submitV2">Valider</button>
+            </form>
+            <button class="cancelV2"> X </button>
+        </div>
+    </header>
+    <main>
+        
+    </main>
+
+    <script src="rance.js"></script>
+</body>
+</html>
